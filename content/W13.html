@@ -139,7 +139,8 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W1-1 << <a href='W1-1.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2<br /><h1>W1-2</h1>
+    <div id="tipue_search_content">Exam << <a href='Exam.html'>Previous</a> <br /><h1>W13</h1>
+<p>第一種在網頁執行 Brython 程式的方法, 是使用者在網際程式編輯區輸入 Brython 程式碼, 必須手動按下 Run 才能執行.</p>
 <!-- 導入 brython 程式庫 -->
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
@@ -188,7 +189,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/41023254/687b782981c74aafd142e57e2d0f306e/raw/7184a2be4293cc8e4b4b9aa3715b1dd5a6625f29/gistfile1.txt"
+        url = "https://gist.githubusercontent.com/41023254/b91150cca147aa72803c6edeb3683608/raw/58b66e2abcf6a65019f8e83271994af2a0f792ba/W13"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -199,7 +200,7 @@ def run():
     #ns = {'__name__':'__main__'}
     #exec(prog, ns)
     # 按下 run 按鈕
-    Ace.run()
+    #Ace.run()
 
 # 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
 doc['kw_run'].bind('click', Ace.run)
@@ -223,7 +224,12 @@ run()
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
 <!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
 <div id="brython_div"></div>
-<br />W1-1 << <a href='W1-1.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2</div>
+<!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
+<script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><br />Exam << <a href='Exam.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
